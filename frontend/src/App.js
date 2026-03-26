@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from "recharts";
-
+const API_URL = "https://srijan-qualitycodesonly.onrender.com";
 function App() {
   const [projects, setProjects] = useState([]);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -10,7 +10,7 @@ function App() {
 
   // 🔹 Fetch projects
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/projects/")
+    fetch(`${API_URL}/api/projects/`)
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);
@@ -19,7 +19,7 @@ function App() {
   const generateTests = async () => {
     if (!selectedFeature) return;
 
-    const res = await fetch("http://127.0.0.1:8000/api/generate/", {
+    const res = await fetch(`${API_URL}/api/generate/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
