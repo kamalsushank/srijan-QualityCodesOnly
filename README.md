@@ -1,10 +1,9 @@
-# 🚀 AI Testing Dashboard – Frontend
+# 🚀 AI Testing Dashboard
 
 ## 🌐 Live Links
 
 - 🔗 **Frontend (Deployed):** https://srijan-quality-codes-only.vercel.app/  
 - 🔗 **Backend (Deployed):** https://srijan-qualitycodesonly.onrender.com 
-- 🔗 **Backend GitHub Repository:** https://github.com/bhargav20-ui/srijan-QualityCodesOnly
 
 ---
 
